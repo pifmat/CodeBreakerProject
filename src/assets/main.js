@@ -7,11 +7,16 @@ function guess() {
     if(answer.value == '' || attempt.value == ''){
       setHiddenFields();
     }
+    console.log(input.value);
     if(validateInput(input.value)){
       attempt.value =   attempt.value + 1;
+      console.log('true'+ attempt.value);
     }else{
+      console.log('false'+ attempt.value);
+
       return false;
     }
+
 }
 
 //implement new functions here
