@@ -18,7 +18,7 @@ function setHiddenFields(){
     answerString = '0' + answerString;
   }
   answer.value = answerString;
-  attempt.value = 0;
+  attempt.value = '0';
 }
 function setMessage(label){
    document.getElementById('message').innerHTML()
