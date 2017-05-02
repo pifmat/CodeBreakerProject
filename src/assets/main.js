@@ -11,14 +11,13 @@ function guess() {
 
 //implement new functions here
 function setHiddenFields(){
-  answer = Math.floor(Math.random() * (10000 - 0 + 1)) + 0;
+  var answerNumber = Math.floor(Math.random() * (10000 - 0 + 1)) + 0;
 
-  //answer = Math.floor(Math.random() * 9999);
-  answer = answer.toString();
-  while(answer.length < 4){
-    answer = '0' + answer;
+  answerString = answerNumber.toString();
+  while(answerString.length < 4){
+    answerString = '0' + answerString;
   }
-  answer.value = answer;
+  answer.value = answerString;
   attempt = 0;
 }
 function setMessage(label){
