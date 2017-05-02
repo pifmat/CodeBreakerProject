@@ -18,6 +18,7 @@ function setHiddenFields(){
   while(answer.length < 4){
     answer = '0' + answer;
   }
+  answer.value = answer;
   attempt = 0;
 }
 function setMessage(label){
