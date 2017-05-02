@@ -17,7 +17,6 @@ function setHiddenFields(){
     answer = '0' + answer;
   }
   attempt = 0;
-  console.log(answer);
 }
 function setMessage(label){
    document.getElementById('message').innerHTML()
