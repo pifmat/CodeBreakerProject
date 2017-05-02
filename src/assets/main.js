@@ -12,7 +12,6 @@ function guess() {
 //implement new functions here
 function setHiddenFields(){
   var answerNumber = Math.floor(Math.random() * (10000 - 0 + 1)) + 0;
-
   answerString = answerNumber.toString();
   while(answerString.length < 4){
     answerString = '0' + answerString;
@@ -20,10 +19,10 @@ function setHiddenFields(){
   answer.value = answerString;
   attempt.value = '0';
 }
-function setMessage(label){
-   document.getElementById('message').innerHTML()
-}
 
+function setMessage(label){
+   document.getElementById('message').innerHTML = label;
+}
 
 function validateInput(input){
   if(input.length == 4){
